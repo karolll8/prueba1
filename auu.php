@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $documento = $_POST['documento'];
     $clave = $_POST['clave'];
 
-    // Asegúrate de validar y procesar los datos según tus necesidades antes de realizar la eliminación.
+    
 
     $conexion = mysqli_connect('localhost', 'root', 'root', 'RUBLE_FORGOTAPP_PROYECT');
 
@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($conexion->query($sqlEliminar) === TRUE) {
         echo "Usuario eliminado correctamente.";
-        // Redirige a la página de archivo1.php o a donde desees después de eliminar el usuario
+        
         header("Location: archivo1.php");
         exit;
     } else {

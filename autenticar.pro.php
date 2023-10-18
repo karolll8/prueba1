@@ -24,7 +24,7 @@ if ($usuario !== false) {
 
     echo $salida;
 } else {
-    echo "error de digitación. intentelo otra vez";
+    echo "error de digitación. intentelo otra vez<br><br>";
 }
 
 function autenticar($documento, $clave)
@@ -42,4 +42,7 @@ function autenticar($documento, $clave)
         return false;
     }
 }
+
+echo '<a href="auu.php">borrar perfil</a>';
+
 ?>
